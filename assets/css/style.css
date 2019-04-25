@@ -3552,7 +3552,7 @@ form .row .col .resecurity {
 }
 .fiyat-tab ul li input[type=radio]:checked + label {
    background-image: none;
-    background-color:#eb7e74;
+    background-color:#ec5959;
     color: #fff;
 }
 
