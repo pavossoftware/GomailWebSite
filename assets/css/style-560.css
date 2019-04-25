@@ -1,0 +1,351 @@
+@charset "utf-8";
+/* CSS Document */
+
+header {
+    height: 70px;
+}
+.logo {
+    height: 70px;
+}
+.cd-nav-trigger {
+    top: 10px;
+}
+header.small {
+    height: 70px;
+}
+header.small .logo {
+    background-size: 122px;
+    height: 70px;
+}
+
+.bg {
+    width: 82vw;
+    position: absolute;
+    height: auto;
+    top: -22vw;
+    right: -30vw;
+    left: auto;
+    z-index: 1;
+}
+
+.teklif-al .btn {
+    padding: 8px 10px;
+    font-size: 13px;
+}
+.teklif-al .btn:nth-child(2) {
+    margin: 10px 0 0;
+}
+
+/* banner */
+.banner {
+    margin: 80px 0 0;
+    height: 280px;
+}
+.banner-left {
+    display: table;
+    height: 230px;
+}
+.banner-right {
+    display: table;
+    height: 280px;
+}
+.typing-text h2 {
+    font-size: 22px;
+    line-height: 30px;
+}
+.cd-headline {
+    font-size: 22px;
+    line-height: 30px;
+}
+.typing-text p {
+    display: none;
+}
+.teklif-al {
+    margin: 10px 0 0;
+}
+
+.main-title h1 {
+    font-size: 20px;
+}
+.main-title p {
+    font-size: 15px;
+    color: #666;
+    margin: 0;
+    padding: 0;
+}
+.baslik-bg {
+    display: none;
+}
+
+.ozellik-list-title h1 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #3c3c3c;
+    margin: 10px 0 0;
+}
+
+.cozum-title h1 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #3c3c3c;
+}
+
+.newsletter {
+    padding: 10px 10px;
+}
+
+footer {
+    background: #f5f5f5;
+    padding: 10px 0;
+}
+.footer-links {
+    display: none;
+}
+.copy {
+    margin: 0 0 10px 0;
+    height: auto;
+    border: 0;
+    padding: 10px 0;
+}
+.copyright {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    text-align: center;
+    float: left;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+}
+.copy-list {
+    line-height: 1;
+    float: right;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+}
+.copy-list a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+}
+.social-icons {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    cursor: pointer;
+    color: #ed7d71;
+    margin: 10px 0;
+    text-align: center;
+    z-index: 1;
+    float: left;
+    width: 100%;
+}
+.top-button {
+    display: none;
+}
+
+.page-image {
+    height: 160px;
+}
+.page-image .page-title h1 {
+    color: #3c3c3c;
+    font-size: 22px;
+    line-height: 22px;
+    margin: 0px;
+    position: relative;
+    font-weight: 700;
+}
+.page-image .page-title .breadcrumb {
+    margin-top: 10px;
+}
+.page-nav-menu {
+    display: none;
+}
+.g-item h1 {
+    margin: 0 0 10px;
+}
+.g-item h2 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #3c3c3c;
+    margin: 0 0 10px;
+}
+#politikalar {
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+}
+#neden {
+    background: #f8f8f8;
+    padding: 20px 0;
+    margin: 10px 0 0;
+}
+.page-box {
+    padding: 10px 0;
+    background: #fff;
+    float: left;
+    width: 100%;
+}
+
+.cozum-ozellik .cozum-ozellik-content img {
+    height: 80px;
+}
+.cozum-ozellik .cozum-ozellik-content h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 10px 0 0;
+    padding: 10px 0 0 0;
+    color: #3c3c3c;
+}
+.maddeler>li {
+    margin-bottom: 5px;
+}
+
+.FAQ .ui-accordion-header {
+    font-size: 15px !important;
+}
+.FAQ .ui-accordion-header {
+    background-color: #f6f6f6;
+    font-size: 16px;
+    color: #3c3c3c;
+    cursor: pointer;
+    text-indent: 20px;
+    outline: none;
+    margin-bottom: 1px;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-right: 90px;
+    margin: 0 0 5px 0 !important;
+}
+
+.contact-title h1 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.contact-title h1:after {
+    height: 2px;
+    bottom: -10px;
+}
+.contact-title p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #666;
+    margin: 0 0 5px;
+}
+.contact-adress-title {
+    font-size: 18px;
+    line-height: 28px;
+    color: #3c3c3c;
+    font-weight: 700;
+    background: url(../img/support.png) no-repeat top center;
+    padding-top: 110px;
+    background-size: 100px;
+}
+.contact-adress-address {
+    margin-top: 10px;
+}
+
+.login-select .nav-tabs>li>a {
+    padding: 15px 10px;
+}
+.login-container {
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px 10px 0 10px;
+}
+.login-box .login-tab-content {
+    padding: 10px;
+    overflow: auto;
+}
+
+.dortyuzdort {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.blogItem-img {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 0 5px;
+}
+.blog .blogItem p {
+    margin: 0 0 10px;
+}
+
+.sayac {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 0;
+}
+
+.dogrulama-bg {
+    display: none;
+}
+#dogrulama-neden {
+    float: left;
+    width: 100%;
+    margin: 0;
+    min-height: auto;
+    background: #fff;
+    padding: 10px 0;
+}
+.fiyatlar-page {
+    background: #fff;
+}
+
+.fiyat-tab ul {
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.fiyat-tab ul li input[type=radio] + label {
+    padding: 14px;
+}
+
+.fiyat-sol {
+    height: 250px;
+}
+.fiyat-input {
+    margin: 0 0 10px;
+}
+.fiyat-paket {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #f5f5f5;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+#bosAciklama {
+    padding: 10px;
+}
+.fiyat-aciklama {
+    padding: 10px;
+}
+.fiyat-sag {
+    height: auto;
+}

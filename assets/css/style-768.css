@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* banner */
+.banner {
+    margin: 80px 0 0;
+    height: 400px;
+}
+.banner-left {
+    display: table;
+    height: 400px;
+}
+.banner-right {
+    display: table;
+    height: 400px;
+}
+.typing-text h2 {
+    font-size: 32px;
+    line-height: 38px;
+}
+.cd-headline {
+    font-size: 32px;
+    line-height: 38px;
+}
+.typing-text p {
+    font-size: 15px;
+    line-height: 24px;
+    margin: 10px 0 0;
+}
+.teklif-al {
+    margin: 20px 0 0;
+}
+
+.basliklar {
+    margin: 10px 0 0;
+}
+.basliklar .col a {
+    margin: 10px 0 0 0;
+    padding: 10px;
+}
+.basliklar .col h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 10px 0 0;
+    padding: 5px 0;
+    color: #3c3c3c;
+}
+
+.ozellik-list-text p {
+    margin: 0;
+}
+
+.cozum-title h1 {
+    font-size: 26px;
+    line-height: 36px;
+    color: #3c3c3c;
+}
+
+.newsletter h3 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #3c3c3c;
+    margin: 0 0 10px 0;
+}
+#newsletter-form {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+
+.vector-img {
+    height: 200px;
+}
+.vector-bg img {
+    width: 200px;
+}
+.vector-two-img {
+    height: 80px;
+    margin: 42px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cozum-ozellik .cozum-ozellik-content {
+    padding: 10px;
+    margin: 10px 0 0;
+}
+
+.dortyuzdort {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 0;
+}
+.dortyuzdort img {
+    width: 140px;
+}
+.dortyuzdort p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+#cozumler .col {
+    padding-right: 0;
+}
+
+.site-form {
+    width: 100%;
+    padding: 10px !important;
+    display: none;
+}
