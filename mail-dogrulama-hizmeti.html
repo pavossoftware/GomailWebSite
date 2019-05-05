@@ -152,7 +152,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <!-- dogrulama -->
             <div class="container">
-                <div class="dogrulama">
+                <div ng-controller="ValidationCtrl" class="dogrulama">
 
                     <!-- page-nav-menu -->
                     <nav class="page-nav-menu">
@@ -170,7 +170,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <canvas class="bubble b-blobs__b3" data-fill="#f8f8f8"></canvas>
                         </div>
                     </div>
-                    <div ng-controller="ValidationCtrl" class="sayac">
+                    <div  class="sayac">
                         <span class="counter counter-analog2" data-direction="up" data-format="145" data-stop="145" data-interval="10">{{ timerCount[0].Times }}</span>
                         <div class="sayac-text">
                             Sorgulanan Toplam Mail Sayısı
@@ -178,14 +178,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     <!-- dogrulama-form -->
                     <div id="dogrulama-form">
-                        <form action="dogrula.php">
-                            <input class="arama" id="Text1" autocomplete="off" type="text" maxlength="70" placeholder="Doğrulama Kodu">
-                            <button class="getir btn btn-blue">Doğrula</button>
+                        <form class="form-inline">
+						
+							<input class="arama" type="text" class="form-control input-lg text-center" placeholder="email to check" ng-model="formData.text">
+							<button type="submit" class=" getir btn btn-primary btn-lg" ng-click="validate(formData.text)">Doğrula</button>
+							
                         </form>
                     </div>
                     <!-- end #dogrulama-form -->
                     <ul class="dogrulama-sonuc">
-                        <li class="onay">Syntax (yazım) hatası var mı?</li>
+					    <div ng-if="validationreponse[0].value == true">
+						<li class="onay">Syntax (yazım) hatası var mı?</li>
+						</div>
+						<div ng-if="validationreponse[0].value == false">
+						<li class="hata">Syntax (yazım) hatası var mı?</li>
+						</div>
                         <li class="onay">MX kaydı var mı?</li>
                         <li class="sorgu">Bu bir geçici posta mı?</li>
                         <li class="hata">Böyle bir kullanıcı gerçekte var mı?</li>
