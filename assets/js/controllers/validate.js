@@ -49,6 +49,7 @@ angular.module('ValidationMdl', ['validateService'])
 					$scope.smtpvalidationreponse = data; 
 					$scope.gettimerCount()
 					$scope.getIPtimercount();
+							alert($scope.smtpvalidationreponse.value);
 				});
 
 		}
@@ -71,6 +72,7 @@ angular.module('ValidationMdl', ['validateService'])
 				$scope.mxValidate(email);
 				$scope.smtpValite (email);
 		
+
 			
 				if($scope.IPtimercount[0].Times >= 5)
 				{

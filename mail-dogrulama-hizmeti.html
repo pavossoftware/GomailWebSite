@@ -187,15 +187,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     <!-- end #dogrulama-form -->
                     <ul class="dogrulama-sonuc">
-					    <div ng-if="validationreponse[0].value == true">
-						<li class="onay">Syntax (yazım) hatası var mı?</li>
+					    <div ng-if="validationreponse[0].value == 'true'">
+						<li class="onay">Syntax (yazım) doğru mu?</li>
 						</div>
-						<div ng-if="validationreponse[0].value == false">
-						<li class="hata">Syntax (yazım) hatası var mı?</li>
+						<div ng-if="validationreponse[0].value == 'false'">
+						<li class="hata">Syntax (yazım) doğru mu?</li>
 						</div>
-                        <li class="onay">MX kaydı var mı?</li>
-                        <li class="sorgu">Bu bir geçici posta mı?</li>
-                        <li class="hata">Böyle bir kullanıcı gerçekte var mı?</li>
+						<div ng-if="validationreponse[0].value == undefind">
+						<li class="sorgu">Syntax (yazım) doğru mu?</li>
+						</div>
+					    <div ng-if="mxvalidationreponse[0].value == 'true'">
+						<li class="onay">MX kaydı var mı?</li>
+						</div>
+						<div ng-if="mxvalidationreponse[0].value == 'false'">
+						<li class="hata">MX kaydı var mı?</li>
+						</div>
+						<div ng-if="mxvalidationreponse[0].value == undefind">
+						<li class="sorgu">MX kaydı var mı?</li>
+						</div>
+					    <div ng-if="domainreponse[0].value == 'true'">
+						<li class="onay">Bu bir geçici posta mı?</li>
+						</div>
+						<div ng-if="domainreponse[0].value == 'false'">
+						<li class="hata">Bu bir geçici posta mı?</li>
+						</div>
+						<div ng-if="domainreponse[0].value == undefind">
+						<li class="sorgu">Bu bir geçici posta mı?</li>
+						</div>
+					    <div ng-if="smtpvalidationreponse[0].value == true">
+						<li class="onay">Böyle bir kullanıcı gerçekte var mı?</li>
+						</div>
+						<div ng-if="smtpvalidationreponse[0].value == false">
+						<li class="hata">Böyle bir kullanıcı gerçekte var mı?</li>
+						</div>
+						<div ng-if="smtpvalidationreponse[0].value == undefind">
+						<li class="sorgu">Böyle bir kullanıcı gerçekte var mı?</li>
+						</div>
                     </ul>
                 </div>
             </div>
