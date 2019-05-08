@@ -1565,6 +1565,11 @@ xtype
     padding: 100px 0 100px 200px;
 }
 
+.mailozellik-list {
+    padding: 0px 0 100px 0px;
+}
+
+
 .ozellik-list.ozellik-list-page {
     padding: 50px 0 0;
 }
