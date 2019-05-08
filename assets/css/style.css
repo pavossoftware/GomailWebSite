@@ -2642,7 +2642,7 @@ form .row .col .resecurity {
 }
 
 .priceItem {
-    padding: 16px 0;
+    padding: 6px 0;
     background: #fff;
     font-weight: 600;
 }
@@ -3607,7 +3607,7 @@ form .row .col .resecurity {
     border: 0;
     color: #61727d;
     border-radius: 0px;
-    font-size: 26px;
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 8px;
     -webkit-transition: border 0.65s, background-color 0.65s;
@@ -3616,7 +3616,7 @@ form .row .col .resecurity {
     -moz-appearance: none;
     appearance: none;
     border-bottom: 2px solid #e1e1e1;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 .fiyat-check div {
     margin: 0 0 10px;
