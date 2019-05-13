@@ -2568,7 +2568,7 @@ form .row .col .resecurity {
 
 /* priceContent */
 .priceContent {
-    margin: 30px 0 0 0;
+    margin: 0 0 0 0;
     border-radius: 10px 10px 0 0;
     overflow: hidden;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.04);
@@ -2590,7 +2590,7 @@ form .row .col .resecurity {
 
 .pUPacket {
     display: inline-block;
-    width: 42%;
+    width: 40%;
     font-size: 14px;
     color: #3c3c3c;
     text-align: center;
@@ -2617,7 +2617,7 @@ form .row .col .resecurity {
 
 .pUKDV {
     display: inline-block;
-    width: 16%;
+    width: 38%;
     text-align: center;
     font-size: 14px;
     color: #61727d;
