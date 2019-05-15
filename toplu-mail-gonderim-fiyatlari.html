@@ -1389,11 +1389,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             if (isNaN(toplam))
                 $('#toplam').text("İletişime Geçin");
-            else if (toplam == 0) {
+            else if (toplam == 0 && $('#adet').val() > 0) {
                 $('#toplam').text("Ücretsiz");
             }
-			else
+			else if (toplam > 0 && $('#adet').val() > 0) {
                 $('#toplam').text(toplam.toFixed(2));
+            }
+			else
+               $('#toplam').text("Adet Giriniz");;
         }
     </script>
 
