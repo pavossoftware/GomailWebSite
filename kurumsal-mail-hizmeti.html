@@ -350,7 +350,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     </div>
 
                                     <!-- Button trigger modal-->
-<div class="text-center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCart">Launch modal</button></div>
+<div class="text-center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCart">Özellikleri Karşılaştır</button></div>
 
 <!-- Modal: modalCart -->
 <div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -359,7 +359,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="modal-content">
       <!--Header-->
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Your cart</h4>
+        <h3 style="text-align:center" class="modal-title" id="myModalLabel"><strong>Paket Özellikleri Karşılaştırma Tablosu</strong></h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
@@ -370,42 +370,129 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <table class="table table-hover">
           <thead>
             <tr>
-              <th>#</th>
-              <th>Product name</th>
-              <th>Price</th>
-              <th>Remove</th>
+              <th>Özellik</th>
+              <th>Basic</th>
+              <th>Business</th>
+              <th>Professional</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th scope="row">1</th>
-              <td>Product 1</td>
-              <td>100$</td>
-              <td><a><i class="fas fa-times"></i></a></td>
+              <th scope="row">7x24 Premium Support Pack</th>
+              <td><a><i class="fa fa-minus"></i></a></td>
+              <td><a><i class="fa fa-minus"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+            </tr>
+
+            <tr>
+              <th scope="row">MX Backup</th>
+              <td><a><i class="fa fa-minus"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
             </tr>
             <tr>
-              <th scope="row">2</th>
-              <td>Product 2</td>
-              <td>100$</td>
-              <td><a><i class="fas fa-times"></i></a></td>
+              <th scope="row">Catch-All Özelliği</th>
+              <td><a><i class="fa fa-minus"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
             </tr>
             <tr>
-              <th scope="row">3</th>
-              <td>Product 3</td>
-              <td>100$</td>
-              <td><a><i class="fas fa-times"></i></a></td>
+              <th scope="row">AntiSpam ve Antivirus</th>
+              <td><a><i class="fa fa-minus"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+            </tr>
+
+            <tr>
+              <th scope="row">Ücretsiz E-Mail Aktarımı</th>
+              <td><a><i class="fa fa-minus"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
             </tr>
             <tr>
-              <th scope="row">4</th>
-              <td>Product 4</td>
-              <td>100$</td>
-              <td><a><i class="fas fa-times"></i></a></td>
+              <th scope="row">Esnek Arttırılabilir Depolama Alanı</th>
+              <td><a><i class="fa fa-minus"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
             </tr>
-            <tr class="total">
-              <th scope="row">5</th>
-              <td>Total</td>
-              <td>400$</td>
-              <td></td>
+
+            <tr>
+              <th scope="row">Ücretsiz SSL Sertifikası</th>
+              <td><a><i class="fa fa-minus"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">Outbox Arşivleme</th>
+              <td><a><i class="fa fa-minus"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">Kural Yönetimi</th>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">Grup Oluşturma, Alias Tanımlama</th>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">Sınırsız Domain</th>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">Sınırsız Kullanıcı</th>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">POP3 ve SMTP Desteği</th>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">Gelişmiş WebMail</th>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">Mobil Cihazlarla Tam Uyumlu</th>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">Ücretsiz E-Mail Sertifikası</th>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">Firewall ve Ddos Atak Önleme</th>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">Domain Akreditasyon ve İtibar Yönetimi</th>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">Günlük Yedekleme (Opsiyonel)</th>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
+              <td><a><i class="fa fa-check"></i></a></td>
             </tr>
           </tbody>
         </table>
@@ -413,8 +500,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <!--Footer-->
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
-        <button class="btn btn-primary">Checkout</button>
+        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Kapat</button>
       </div>
     </div>
   </div>
