@@ -2617,7 +2617,7 @@ form .row .col .resecurity {
 
 .pUKDV {
     display: inline-block;
-    width: 38%;
+    width: 20%;
     text-align: center;
     font-size: 14px;
     color: #61727d;
@@ -2630,7 +2630,22 @@ form .row .col .resecurity {
 
 .pUOrder {
     display: inline-block;
+    width: 15%;
+    text-align: center;
+    font-size: 14px;
+    color: #61727d;
+}
+.pUSubscriber {
+    display: inline-block;
     width: 20%;
+    text-align: center;
+    font-size: 14px;
+    color: #61727d;
+}
+
+.pUAmount {
+    display: inline-block;
+    width: 38%;
     text-align: center;
     font-size: 14px;
     color: #61727d;
