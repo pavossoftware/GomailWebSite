@@ -2357,6 +2357,11 @@ form .row .col .resecurity {
     color: #fff;
 }
 
+/* agree-box */
+.agree-box {
+    padding: 0px 0;
+}
+
 /* page-box */
 .page-box {
     padding: 50px 0;
@@ -2507,6 +2512,16 @@ form .row .col .resecurity {
 .vector-bg img {
     width: 420px;
 }
+
+/* agreement */
+#agreement {
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+    min-height: 360px;
+}
+
+
 
 /* servisler */
 #servisler {
