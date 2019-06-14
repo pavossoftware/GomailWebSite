@@ -2619,8 +2619,7 @@ form .row .col .resecurity {
     display: inline-block;
     width: 40%;
     font-size: 14px;
-    color: #3c3c3c;
-    text-align: center;
+    color: #61727d;
 }
 
 .priceTitle .pUPacket {
@@ -2651,7 +2650,7 @@ form .row .col .resecurity {
 }
 
 .priceTitle .pUKDV {
-    color: #3c3c3c;
+    color: #61727d;
     font-size: 14px;
 }
 
