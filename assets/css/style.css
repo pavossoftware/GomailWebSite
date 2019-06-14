@@ -1059,6 +1059,18 @@ header .right .top-buttons .btn-login {
     color: #fff;
 }
 
+header .right .top-buttons .btn-login1 {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 12px 20px;
+}
+
+header .right .top-buttons .btn-login1:hover {
+  background: #fff;
+  border-color: #f8f8f8;
+    color: #3CB0FC;
+}
+
 header .right .top-buttons .btn-login:hover {
   background: #fff;
   border-color: #f8f8f8;

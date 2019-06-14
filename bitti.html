@@ -1,24 +1,17 @@
 <!DOCTYPE HTML>
-<html ng-app="ValidationMdl" lang="tr">
-<head >
+<html lang="tr">
+<head>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-TBZR3WZ');
-  
-
-  
-  </script>
+  })(window,document,'script','dataLayer','GTM-TBZR3WZ');</script>
   <!-- End Google Tag Manager -->
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="Content-Language" content="tr" />
     <title>GoMail Kurumsal Toplu E-Mail Hizmeti</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-	<script src="assets/js/services/validateService.js"></script>
-	<script src="assets/js/controllers/validate.js"></script>
 
     <meta name="description" content="Kurumsal E-Mail Hosting, Kurumsal E-Mail Sunucu, Cloud Mail, Toplu E-Mail, Kişiye Özel Mail, Toplu E-Mail Hizmeti ve Kurumsal E-Mail çözümlerini bu sayfada bulabilirsiniz.">
     <meta name="keywords" content="Kurumsal E-Mail Hosting, Kurumsal E-Mail Sunucu, Cloud Mail, Ücretsiz Toplu E-Mail, Ücretsiz Mail Hosting, Ücretsiz Mail Sunucu, Toplu E-Mail, E-Mail Marketing, İzinli Pazarlama, E-Mail Pazarlama, Kişiye Özel Mail, Mail Doğrulama, Transactional Mail, Bulk Mail, Zamanlanmış Mail, Raporlanmış Mail">
@@ -31,7 +24,6 @@
 
     <link href="assets/css/main.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
-	<link href="assets/css/flapper.css" rel="stylesheet" />
     <link href="assets/css/media.css" rel="stylesheet" type="text/css" media="all" />
 
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
@@ -41,7 +33,6 @@
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 
     <script src="assets/js/jquery-1.9.1.min.js"></script>
-	<script src="assets/js/jquery.flapper.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
 
     <!--[if lte IE 7]>
@@ -73,7 +64,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         accurateTrackBounce:true,
         webvisor:true
    });
-   
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/51093581" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
@@ -142,184 +132,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="full-container">
 
             <!-- #page-image -->
-            <div class="page-image" style="background-image:url(assets/img/kurumsal.jpg)">
+            <div class="page-image" style="background-image:url(assets/img/404.jpg)">
                 <div class="container">
                     <div class="table-cell">
                         <div class="page-title">
-                            <h1>E-Mail Doğrulama</h1>
-                            <ol class="breadcrumb">
-                                <li><a href="index.html">Anasayfa</a></li>
-                                <li><a href="#">E-Mail Doğrulama</a></li>
-                            </ol>
+                            <h1>Saatlik 5 Adet Doğrulama Hakkınız Var</h1>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- END #page-image -->
 
-            <!-- dogrulama -->
-            <div class="container">
-                <div ng-controller="ValidationCtrl" class="dogrulama">
-
-                    <!-- page-nav-menu -->
-                    <nav class="page-nav-menu">
-                        <ul>
-                            <li><a href="#syntax">Syntax</a></li>
-                            <li><a href="#mx">MX Kaydı</a></li>
-                            <li><a href="#gecici">Geçici Posta</a></li>
-                            <li><a href="#kullanici">Kullanıcı Gerçekte Var mı?</a></li>
-                        </ul>
-                    </nav>
-                    <!-- end #page-nav-menu -->
-
-                    <div class="dogrulama-bg">
-                        <div class="b-blobs__b1 w-embed">
-                            <canvas class="bubble b-blobs__b3" data-fill="#f8f8f8"></canvas>
-                        </div>
-                    </div>
-                    <div  class="sayac">
-                        <span class="counter counter-analog2" data-direction="up" data-format="145" data-stop="145" data-interval="10">{{ timerCount[0].Times }}</span>
-                        <div class="sayac-text">
-                            Günlük Sorgulanan Toplam Mail Sayısı
-                        </div>
-                    </div>
-                    <!-- dogrulama-form -->
-                    <div id="dogrulama-form">
-                        <form class="form-inline">
-
-							<input class="arama" type="text" class="form-control input-lg text-center" placeholder="doğrulanacak email" ng-model="formData.text">
-							<button type="submit" class=" getir btn btn-primary btn-lg" ng-click="validate(formData.text)">Doğrula</button>
-
-                        </form>
-                    </div>
-                    <!-- end #dogrulama-form -->
-                    <ul class="dogrulama-sonuc">
-					    <div ng-if="validationreponse[0].value == 'true'">
-						<li class="onay">Syntax (yazım) doğru mu?</li>
-						</div>
-						<div ng-if="validationreponse[0].value == 'false'">
-						<li class="hata">Syntax (yazım) doğru mu?</li>
-						</div>
-						<div ng-if="validationreponse[0].value == undefind">
-						<li class="sorgu">Syntax (yazım) doğru mu?</li>
-						</div>
-					    <div ng-if="mxvalidationreponse[0].value == 'true'">
-						<li class="onay">MX kaydı var mı?</li>
-						</div>
-						<div ng-if="mxvalidationreponse[0].value == 'false'">
-						<li class="hata">MX kaydı var mı?</li>
-						</div>
-						<div ng-if="mxvalidationreponse[0].value == undefind">
-						<li class="sorgu">MX kaydı var mı?</li>
-						</div>
-					    <div ng-if="domainreponse[0].value == 'false'">
-						<li class="onay">Bu bir geçici posta değil mi?</li>
-						</div>
-						<div ng-if="domainreponse[0].value == 'true'">
-						<li class="hata">Bu bir geçici posta değil mı?</li>
-						</div>
-						<div ng-if="domainreponse[0].value == undefind">
-						<li class="sorgu">Bu bir geçici posta değil mı?</li>
-						</div>
-					    <div ng-if="smtpvalidationreponse[0].value == true">
-						<li class="onay">Böyle bir kullanıcı gerçekte var mı?</li>
-						</div>
-						<div ng-if="smtpvalidationreponse[0].value == false">
-						<li class="hata">Böyle bir kullanıcı gerçekte var mı?</li>
-						</div>
-						<div ng-if="smtpvalidationreponse[0].value == undefind">
-						<li class="sorgu">Böyle bir kullanıcı gerçekte var mı?</li>
-						</div>
-                    </ul>
-                </div>
+            <div class="dortyuzdort">
+                <img src="assets/img/404.svg" alt="">
+                <p>Üzgünüz. Doğrulama Hakkınız bitti</p>
+                <a href="index.html" class="btn btn-blue">Anasayfa'ya Dön</a>
             </div>
-            <!-- end #dogrulama -->
-
-            <!-- dogrulama-neden -->
-            <div id="dogrulama-neden" class="g-item">
-                <div id="syntax" class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2>Syntax</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, nobis, consequuntur! Optio enim, et soluta iure reprehenderit iste, laboriosam quam animi illo hic, eveniet repellendus. Error itaque voluptas, nostrum
-                                quas ut tenetur nemo consectetur! Magnam odio perferendis delectus eius laboriosam fuga sed. Ullam similique dolorem laborum veniam quos dolore obcaecati doloribus ipsum. Suscipit id quo, cupiditate commodi, eum
-                                facere! Neque!</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem nemo at laborum? Voluptatibus, iusto cumque voluptate magnam fuga molestiae, assumenda quidem harum quasi, ipsa quae vitae voluptas. Odio ratione ad
-                                aspernatur! Atque, autem blanditiis qui molestiae ex ab sapiente.</p>
-                        </div>
-                        <div class="dogrulama-img col-md-6">
-                            <div class="vector-bg"><img src="assets/img/vector-bg.png"></div>
-                            <img src="assets/img/dogrulama/1.svg" class="vector-two-img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end #ogrulama-neden -->
-
-            <!-- dogrulama-neden -->
-            <div id="dogrulama-neden" class="g-item">
-                <div id="mx" class="container">
-                    <div class="row">
-                        <div class="dogrulama-img col-md-6">
-                            <div class="vector-bg"><img src="assets/img/vector-bg.png"></div>
-                            <img src="assets/img/dogrulama/2.svg" class="vector-two-img">
-                        </div>
-                        <div class="col-md-6">
-                            <h2>MX Kaydı</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, nobis, consequuntur! Optio enim, et soluta iure reprehenderit iste, laboriosam quam animi illo hic, eveniet repellendus. Error itaque voluptas, nostrum
-                                quas ut tenetur nemo consectetur! Magnam odio perferendis delectus eius laboriosam fuga sed. Ullam similique dolorem laborum veniam quos dolore obcaecati doloribus ipsum. Suscipit id quo, cupiditate commodi, eum
-                                facere! Neque!</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem nemo at laborum? Voluptatibus, iusto cumque voluptate magnam fuga molestiae, assumenda quidem harum quasi, ipsa quae vitae voluptas. Odio ratione ad
-                                aspernatur! Atque, autem blanditiis qui molestiae ex ab sapiente.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end #ogrulama-neden -->
-
-            <!-- dogrulama-neden -->
-            <div id="dogrulama-neden" class="g-item">
-                <div id="gecici" class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2>Geçici Posta</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, nobis, consequuntur! Optio enim, et soluta iure reprehenderit iste, laboriosam quam animi illo hic, eveniet repellendus. Error itaque voluptas, nostrum
-                                quas ut tenetur nemo consectetur! Magnam odio perferendis delectus eius laboriosam fuga sed. Ullam similique dolorem laborum veniam quos dolore obcaecati doloribus ipsum. Suscipit id quo, cupiditate commodi, eum
-                                facere! Neque!</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem nemo at laborum? Voluptatibus, iusto cumque voluptate magnam fuga molestiae, assumenda quidem harum quasi, ipsa quae vitae voluptas. Odio ratione ad
-                                aspernatur! Atque, autem blanditiis qui molestiae ex ab sapiente.</p>
-                        </div>
-                        <div class="dogrulama-img col-md-6">
-                            <div class="vector-bg"><img src="assets/img/vector-bg.png"></div>
-                            <img src="assets/img/dogrulama/3.svg" class="vector-two-img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end #ogrulama-neden -->
-
-            <!-- dogrulama-neden -->
-            <div id="dogrulama-neden" class="g-item">
-                <div id="kullanici" class="container">
-                    <div class="row">
-                        <div class="dogrulama-img col-md-6">
-                            <div class="vector-bg"><img src="assets/img/vector-bg.png"></div>
-                            <img src="assets/img/dogrulama/4.svg" class="vector-two-img">
-                        </div>
-                        <div class="col-md-6">
-                            <h2>Kullanıcı Gerçekte Var mı?</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, nobis, consequuntur! Optio enim, et soluta iure reprehenderit iste, laboriosam quam animi illo hic, eveniet repellendus. Error itaque voluptas, nostrum
-                                quas ut tenetur nemo consectetur! Magnam odio perferendis delectus eius laboriosam fuga sed. Ullam similique dolorem laborum veniam quos dolore obcaecati doloribus ipsum. Suscipit id quo, cupiditate commodi, eum
-                                facere! Neque!</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem nemo at laborum? Voluptatibus, iusto cumque voluptate magnam fuga molestiae, assumenda quidem harum quasi, ipsa quae vitae voluptas. Odio ratione ad
-                                aspernatur! Atque, autem blanditiis qui molestiae ex ab sapiente.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end #ogrulama-neden -->
-
-
 
         </div>
         <!-- end #full-container -->
@@ -440,16 +268,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.4/paper-full.min.js"></script>
     <script src="assets/js/text.js"></script>
     <script src="assets/js/blob.js"></script>
-	
-	<script>
-	
-
-
-
-
-
-	
-	</script>
 
 </body>
 
