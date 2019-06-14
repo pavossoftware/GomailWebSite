@@ -7476,6 +7476,28 @@ th {
   text-align: left;
 }
 
+.tablepo {
+  width: 50%;
+  max-width: 50%;
+  margin-bottom: 12px;
+  margin-left: 100px;
+}
+.tablepo > thead > tr > th,
+.tablepo > thead > tr > td,
+.tablepo > tbody > tr > th,
+.tablepo > tbody > tr > td,
+.tablepo > tfoot > tr > th,
+.tablepo > tfoot > tr > td {
+  padding: 1px;
+  line-height: 1.42857;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+.tablepo > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+
 .table {
   width: 100%;
   max-width: 100%;
