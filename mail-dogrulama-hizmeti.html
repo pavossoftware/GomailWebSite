@@ -187,7 +187,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div id="dogrulama-form">
                         <form class="form-inline">
 
-							<input class="arama" type="text" class="form-control input-lg text-center" placeholder="doğrulanacak email" ng-model="formData.text">
+							<input class="arama" type="text" class="form-control input-lg text-center" placeholder="Doğrulamak İstediğiniz E-Mail Adresini Yazınız" ng-model="formData.text">
 							<button type="submit" class=" getir btn btn-primary btn-lg" ng-click="validate(formData.text)">Doğrula</button>
 
                         </form>
@@ -213,10 +213,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<li class="sorgu">MX kaydı var mı?</li>
 						</div>
 					    <div ng-if="domainreponse[0].value == 'false'">
-						<li class="onay">Bu bir geçici posta değil mi?</li>
+						<li class="onay">Geçici posta kontrolü</li>
 						</div>
 						<div ng-if="domainreponse[0].value == 'true'">
-						<li class="hata">Bu bir geçici posta değil mı?</li>
+						<li class="hata">Geçici posta kontrolü</li>
 						</div>
 						<div ng-if="domainreponse[0].value == undefind">
 						<li class="sorgu">Bu bir geçici posta değil mı?</li>
@@ -349,10 +349,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
               <div class="col col-md-3">
                   <h6>Sözleşmeler</h6>
-                  <a href="#">Satış Sözleşmesi</a>
-                  <a href="#">Gizlilik Sözleşmesi</a>
-                  <a href="#">Hizmet Sözleşmesi</a>
-                  <a href="#">Kullanım Koşulları</a>
+                  <a href="sozlesme.html">Satış Sözleşmesi</a>
+                  <a href="sozlesme.html">Gizlilik Sözleşmesi</a>
+                  <a href="sozlesme.html">Hizmet Sözleşmesi</a>
+                  <a href="sozlesme.html">Kullanım Koşulları</a>
                 </div>
             </div>
         </div>
