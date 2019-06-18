@@ -47,26 +47,25 @@
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBZR3WZ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBZR3WZ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+     m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(51093581, "init", {
-        id:51093581,
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/51093581" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+     ym(51093581, "init", {
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true
+     });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/51093581" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
 
     <!-- header -->
     <header>
@@ -200,11 +199,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="tab-pane animated fadeIn active in" id="kayitol">
 
                                 <div id="register-form-container">
-                                    <form id="form" action="ok.php" method="post" novalidate="novalidate">
+                                    <form id="form" action="https://portal.gomail.com.tr/iletisimgomail/islem.aspx?p=kayit" method="post" novalidate="novalidate">
                                         <div class="row">
 
                                             <div class="col col-md-12 col-sm-12 col-xs-12">
-                                                <input type="text" class="form-control" id="txtKullaniciAdi" name="txtKullaniciAdi" placeholder="Kullanıcı Adı" data-val-required="<img src='images/Validate.png' style='margin-top: 13px;' />" data-val="true">
+                                                <input type="text" class="form-control" id="txtEposta" name="txtEposta" placeholder="E-Posta Adresi" data-val-required="<img src='images/InputReqImg.png' style='margin-top: 8px;' />" data-val-regex="<img src='images/InputReqImg.png' style='margin-top: 8px;' />" data-val-regex-pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$" data-val="true">
                                             </div>
 
                                             <div class="col col-md-12 col-sm-12 col-xs-12">
@@ -212,30 +211,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             </div>
 
                                             <div class="col col-md-12 col-sm-12 col-xs-12">
-                                                <input type="text" class="form-control" id="txtEposta" name="txtEposta" placeholder="E-Posta Adresi" data-val-required="<img src='images/InputReqImg.png' style='margin-top: 8px;' />" data-val-regex="<img src='images/InputReqImg.png' style='margin-top: 8px;' />" data-val-regex-pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$" data-val="true">
-                                            </div>
-
-                                            <div class="col col-md-12 col-sm-12 col-xs-12">
                                                 <input type="password" class="form-control" id="txtParola" name="txtParola" placeholder="Parola" data-val-required="<img src='images/Validate.png' style='margin-top: 13px;' />" data-val="true">
-                                            </div>
-
-                                            <div style="text-align: left; font-size: 11px; margin-bottom: 20px; padding-left: 5px;">
-                                                <b><i>Belirleyeceğiniz parola;</i></b>
-                                                <br>
-                                                <i>Min 6 karakterden oluşmalı,</i>
-                                                <br>
-                                                <i>En az 1 büyük harf ve en az 1 rakam içermelidir.</i>
                                             </div>
 
 						                    <div class="col col-md-12 col-sm-12 col-xs-12 mt-10 mb-20">
 
-                                  <label>
-                                          <input name="hatirla" value="1" type="checkbox"> <a href="sozlesme.html" target="_blank"><font color="red">Mesafeli Satış Sözleşmesini</font></a> Okudum Onaylıyorum.
-                                  </label>
+												<label>
+													<input id="checkme" name="checkme" value="1" type="checkbox"> <a href="sozlesme.html" target="_blank"><font color="red">Mesafeli Satış Sözleşmesini</font></a> Okudum, Onaylıyorum.
+												</label>
                                             </div>
 
                                             <div class="col col-md-12 col-sm-12 col-xs-12">
-                                                <button class="btn btn-blue send-button" value="1" type="submit">Üye Ol</button>
+                                                <button id="btnKayit" name="btnKayit" disabled="disabled" class="btn btn-blue send-button" value="1" type="submit">Üye Ol</button>
                                             </div>
                                         </div>
                                     </form>
@@ -369,5 +356,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="assets/js/blob.js"></script>
 
 </body>
-
+<script type="text/javascript">
+   var checker = document.getElementById('checkme');
+   var sendbtn = document.getElementById('btnKayit');
+   checker.onchange = function(){
+	   if(this.checked){
+		  sendbtn.disabled = false;
+	   } else {
+		 sendbtn.disabled = true;
+	   }
+   }
+</script>
 </html>

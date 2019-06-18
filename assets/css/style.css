@@ -2924,8 +2924,7 @@ form .row .col .resecurity {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border-bottom: 2px solid #434343;
-    text-transform: uppercase;
+    border-bottom: 2px solid #434343;    
 }
 
 .contact-form-map .col form .send-button {
