@@ -3248,7 +3248,7 @@ form .row .col .resecurity {
 .login-container {
     margin: 0 auto;
     width: 520px;
-    padding-top: 50px;
+    padding-top: 5px;
 }
 
 .login-box {
@@ -3374,6 +3374,24 @@ form .row .col .resecurity {
     margin: 25px 0;
 }
 
+/* top-form */
+.top-form {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 20px;
+}
+
+.top-form img {
+    width: 100px;
+}
+
+.top-form p {
+    font-size: 18px;
+    color: #61727d;
+    line-height: 1;
+    font-weight: 600;
+    margin: 25px 0;
+}
 
 /* yardim */
 .blog {
