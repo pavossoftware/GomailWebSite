@@ -163,23 +163,23 @@
                             <!-- girisyap -->
                             <div class="tab-pane animated fadeIn" id="girisyap">
                                 <div id="register-form-container">
-                                    <form id="form" action="ok.php" method="post" novalidate="novalidate">
+                                    <form id="form" action="https://portal.gomail.com.tr/Login.aspx" method="post" novalidate="novalidate">
                                         <div class="row">
-
+											<input type="hidden" name="gomail" value="gomail" id="gomail">
                                             <div class="col col-md-12 col-sm-12 col-xs-12">
-                                                <input type="text" class="form-control" id="txtEposta" name="txtEposta" placeholder="E-Posta Adresi" data-val-required="<img src='images/InputReqImg.png' style='margin-top: 8px;' />" data-val-regex="<img src='images/InputReqImg.png' style='margin-top: 8px;' />" data-val-regex-pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$" data-val="true">
+                                                <input type="text" class="form-control" id="username" name="username" placeholder="E-Posta Adresi" data-val-required="<img src='images/InputReqImg.png' style='margin-top: 8px;' />" data-val-regex="<img src='images/InputReqImg.png' style='margin-top: 8px;' />" data-val-regex-pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$" data-val="true">
                                             </div>
 
                                             <div class="col col-md-12 col-sm-12 col-xs-12">
-                                                <input type="password" class="form-control" id="txtParola" name="txtParola" placeholder="Parola" data-val-required="<img src='images/Validate.png' style='margin-top: 13px;' />" data-val="true">
+                                                <input type="password" class="form-control" id="password" name="password" placeholder="Parola" data-val-required="<img src='images/Validate.png' style='margin-top: 13px;' />" data-val="true">
                                             </div>
 
                                             <div class="col col-md-12 col-sm-12 col-xs-12 mt-10 mb-20">
                                                 <div class="row">
                                                 <div class="col-lg-6">
-                                                    <label>
+                                                    <!--<label>
                                                         <input name="hatirla" value="1" type="checkbox"> Beni Hatırla
-                                                    </label>
+                                                    </label>-->
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <a class="sifremi-unuttum" href="unuttum.html"><i class="fa fa-lock"></i>Şifremi unuttum</a>
@@ -199,7 +199,7 @@
                             <div class="tab-pane animated fadeIn active in" id="kayitol">
 
                                 <div id="register-form-container">
-                                    <form id="form" action="https://portal.gomail.com.tr/iletisimgomail/islem.aspx?p=kayit" method="post" novalidate="novalidate">
+                                    <form id="form" action="https://portal.gomail.com.tr/islem.aspx?p=kayit" method="post" novalidate="novalidate">
                                         <div class="row">
 
                                             <div class="col col-md-12 col-sm-12 col-xs-12">
