@@ -1176,7 +1176,9 @@ header .right .top-buttons .btn-white i {
     vertical-align: middle;
 }
 .slider-img img {
-    width: 100%;
+    width: auto;
+    height: 580px;
+    float: right;
 }
 
 .subslider-img {
@@ -2924,7 +2926,7 @@ form .row .col .resecurity {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border-bottom: 2px solid #434343;    
+    border-bottom: 2px solid #434343;
 }
 
 .contact-form-map .col form .send-button {
