@@ -73,7 +73,7 @@ angular.module('ValidationMdl', ['validateService'])
 		
 
 			
-				if($scope.IPtimercount[0].Times >= 5)
+				if($scope.IPtimercount[0].Times >= 10)
 				{
 					window.location = 'bitti.html';
 				}
