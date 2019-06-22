@@ -5,6 +5,11 @@ angular.module('ValidationMdl', ['validateService'])
 		
 		$scope.checkButton = true;
 		
+		$scope.enable=false;
+		
+
+		
+		
 		$scope.StringValidate = function (email) {
 			validateSrv.isvalit(email)
 				.success(function(data) {
@@ -35,7 +40,9 @@ angular.module('ValidationMdl', ['validateService'])
 		$scope.mxValidate = function (email) {
 			validateSrv.mxvalit(email)
 				.success(function(data) {
-					$scope.mxvalidationreponse = data; 
+					$scope.mxvalidationreponse = data;
+					if($scope.mxvalidationreponse[0].value == 'true'){$scope.smtpValite (email);}
+					if($scope.mxvalidationreponse[0].value == 'false'){$scope.enable=false;}
 				});
 
 		}
@@ -49,6 +56,7 @@ angular.module('ValidationMdl', ['validateService'])
 					$scope.smtpvalidationreponse = data; 
 					$scope.gettimerCount()
 					$scope.getIPtimercount();
+					$scope.enable=false;
 				});
 
 		}
@@ -63,21 +71,21 @@ angular.module('ValidationMdl', ['validateService'])
 		
 		$scope.validate = function (email) {
 			
-				console.log($scope.checkButton);
+		$scope.enable=true;
+			
 			if(email != undefined && $scope.checkButton == true ){
 				
 				$scope.StringValidate(email);
 				$scope.ckdomain(email);
 				$scope.mxValidate(email);
-				$scope.smtpValite (email);
-		
-
+	
+			}
 			
-				if($scope.IPtimercount[0].Times >= 10)
-				{
+			if($scope.IPtimercount[0].Times >= 10)
+			{
 					window.location = 'bitti.html';
-				}
-			}	
+			}
+			
 		}
 		
 		$scope.gettimerCount();

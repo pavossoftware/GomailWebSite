@@ -182,7 +182,7 @@
                         <form class="form-inline">
 
 							<input class="arama" type="text" class="form-control input-lg text-center" placeholder="Doğrulamak İstediğiniz E-Mail Adresini Yazınız" ng-model="formData.text">
-							<button type="submit" class=" getir btn btn-primary btn-lg" ng-click="validate(formData.text)">Doğrula</button>
+							<button type="submit" class=" getir btn btn-primary btn-lg" ng-click="validate(formData.text)" ng-disabled="enable">Doğrula</button>
 
                         </form>
                     </div>
@@ -218,10 +218,10 @@
 					    <div ng-if="smtpvalidationreponse[0].value == true">
 						<li class="onay">Böyle bir kullanıcı gerçekte var mı?</li>
 						</div>
-						<div ng-if="smtpvalidationreponse[0].value == false">
+						<div  ng-if="mxvalidationreponse[0].value == 'false' || smtpvalidationreponse[0].value == false">
 						<li class="hata">Böyle bir kullanıcı gerçekte var mı?</li>
 						</div>
-						<div ng-if="smtpvalidationreponse[0].value == undefind">
+						<div ng-if="mxvalidationreponse[0].value == undefind && smtpvalidationreponse[0].value == undefind">
 						<li class="sorgu">Böyle bir kullanıcı gerçekte var mı?</li>
             <div><p id="syntax"></p></div>
 						</div>
