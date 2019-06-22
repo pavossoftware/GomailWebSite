@@ -3,7 +3,6 @@ angular.module('ValidationMdl', ['validateService'])
 	// inject the Todo service factory into our controller
 	.controller('ValidationCtrl', ['$scope','validateSrv', function($scope, validateSrv) {
 		
-		$scope.checkButton = true;
 		
 		$scope.enable=false;
 		
@@ -42,17 +41,17 @@ angular.module('ValidationMdl', ['validateService'])
 				.success(function(data) {
 					$scope.mxvalidationreponse = data;
 					if($scope.mxvalidationreponse[0].value == 'true'){$scope.smtpValite (email);}
-					if($scope.mxvalidationreponse[0].value == 'false'){$scope.enable=false;}
+					if($scope.mxvalidationreponse[0].value == 'false'){$scope.enable=false; }
 				});
 
 		}
 		
 		$scope.smtpValite = function (email) {
 			
-			$scope.checkButton = false;
+			
 			validateSrv.smtpvalit(email)
 				.success(function(data) {
-					$scope.checkButton = true;
+					
 					$scope.smtpvalidationreponse = data; 
 					$scope.gettimerCount()
 					$scope.getIPtimercount();
@@ -71,9 +70,10 @@ angular.module('ValidationMdl', ['validateService'])
 		
 		$scope.validate = function (email) {
 			
-		$scope.enable=true;
+		
 			
-			if(email != undefined && $scope.checkButton == true ){
+			if(email != undefined  ){
+				$scope.enable=true;
 				
 				$scope.StringValidate(email);
 				$scope.ckdomain(email);
