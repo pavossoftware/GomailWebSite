@@ -3474,6 +3474,13 @@ form .row .col .resecurity {
     margin: 10px 0 0;
 }
 
+#dogrulama-form1 {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 25px 0 0;
+}
+
 #dogrulama-form input {
     width: 100%;
     border-radius: 100px;

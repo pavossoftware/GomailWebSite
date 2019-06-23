@@ -5,6 +5,7 @@ angular.module('ValidationMdl', ['validateService'])
 		
 		
 		$scope.enable=false;
+		$scope.email="";
 		
 
 		
@@ -73,6 +74,8 @@ angular.module('ValidationMdl', ['validateService'])
 		
 			
 			if(email != undefined  ){
+				
+				$scope.email=email;
 				$scope.enable=true;
 				
 				$scope.StringValidate(email);
