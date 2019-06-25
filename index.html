@@ -34,7 +34,7 @@
 
     <script src="assets/js/jquery-1.9.1.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
-
+    <script src='https://cdn.jsdelivr.net/npm/jquery.session@1.0.0/jquery.session.js'></script>
     <!--[if lte IE 7]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <link href="css/ie7.css" rel="stylesheet" />
@@ -448,11 +448,34 @@ alınabilir.</p>
     </div>
     <!-- cd-overlay-content -->
     <!-- end navmenu -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 style="text-align: center;" class="modal-title" id="exampleModalLabel"><strong>Paket Özellikleri</strong></h4>
+      </div>
+      <div class="modal-body">
 
+		asdasdasdasdasdasd
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+
+      </div>
+    </div>
+  </div>
+</div>
     <!-- fancybox -->
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css">
     <script src="assets/js/jquery.fancybox.min.js"></script>
-
+	<script>
+		
+		$(window).on('load',function(){
+        	if($.session.get('visit') == undefined){ $('#exampleModal').modal('show');};
+			$.session.set('visit', 'visited');
+		});
+		
+	</script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap-hover-dropdown.js"></script>
     <script>
