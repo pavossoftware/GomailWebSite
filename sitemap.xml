@@ -1,78 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>https://www.gomail.com.tr/</loc>
-  <lastmod>2018-04-30T08:31:41+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://gomail.com.tr/</loc>
+<lastmod>2019-06-29T10:59:12+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.gomail.com.tr/index.html</loc>
-  <lastmod>2018-04-30T08:31:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://gomail.com.tr/index.html</loc>
+<lastmod>2019-06-29T10:59:12+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gomail.com.tr/kurumsal.html</loc>
-  <lastmod>2018-04-30T08:31:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>
+https://gomail.com.tr/toplu-mail-gonderim-servisi-ozellikleri.html
+</loc>
+<lastmod>2019-06-29T10:59:13+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gomail.com.tr/toplu-mail-gonderim-ozellikleri.html</loc>
-  <lastmod>2018-04-30T08:31:42+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>
+https://gomail.com.tr/toplu-mail-gonderim-fiyatlari.html
+</loc>
+<lastmod>2019-06-29T10:59:13+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gomail.com.tr/toplu-mail-gonderim-servisi.html</loc>
-  <lastmod>2018-04-30T08:31:42+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://gomail.com.tr/mail-dogrulama-hizmeti.html</loc>
+<lastmod>2019-06-29T10:59:13+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gomail.com.tr/kurumsal-mail-hizmeti.html</loc>
-  <lastmod>2018-04-30T08:31:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>
+https://gomail.com.tr/toplu-mail-gonderim-servisi.html
+</loc>
+<lastmod>2019-06-29T10:59:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gomail.com.tr/toplu-mail-gonderim-fiyatlari.html</loc>
-  <lastmod>2018-04-30T08:31:42+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>
+https://gomail.com.tr/kurumsal-mail-hosting-cozumleri.html
+</loc>
+<lastmod>2019-06-29T10:59:12+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gomail.com.tr/sss.html</loc>
-  <lastmod>2018-04-30T08:31:42+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://gomail.com.tr/iletisim.html</loc>
+<lastmod>2019-06-29T10:59:12+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gomail.com.tr/iletisim.html</loc>
-  <lastmod>2018-04-30T08:31:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://gomail.com.tr/giris.html</loc>
+<lastmod>2019-06-29T10:59:12+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gomail.com.tr/unuttum.html</loc>
-  <lastmod>2018-04-30T08:31:42+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://gomail.com.tr/kayit.html</loc>
+<lastmod>2019-06-29T10:59:12+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gomail.com.tr/kayit.html</loc>
-  <lastmod>2018-04-30T08:31:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://gomail.com.tr/kurumsal.html</loc>
+<lastmod>2019-06-29T10:59:12+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gomail.com.tr/mail-dogrulama-hizmeti.html</loc>
-  <lastmod>2018-04-30T08:31:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://gomail.com.tr/sozlesme.html</loc>
+<lastmod>2019-06-29T10:59:13+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gomail.com.tr/sozlesme.html</loc>
-  <lastmod>2018-04-30T08:31:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://gomail.com.tr/sss.html</loc>
+<lastmod>2019-06-29T10:59:13+00:00</lastmod>
+<priority>0.80</priority>
 </url>
-
-
-
+<url>
+<loc>https://gomail.com.tr/sifremi-unuttum.html</loc>
+<lastmod>2019-06-29T10:59:13+00:00</lastmod>
+<priority>0.64</priority>
+</url>
 </urlset>
