@@ -2043,6 +2043,15 @@ xtype
     position: relative;
     z-index: 2;
 }
+.copyright1 {
+    font-size: 14px;
+    line-height: 125px;
+    color: #3CB0FC;
+    text-align: center;
+    float: left;
+    position: relative;
+    z-index: 2;
+}
 
 .copy-list {
     line-height: 120px;
