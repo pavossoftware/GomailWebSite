@@ -386,7 +386,7 @@
                                                     <input type="checkbox" name="order[agreement]" id="order_agreement" class="ng-pristine ng-valid">
                                                     <label for="order_agreement">
                                                         <span class="label-text">
-                                                            <a href="javascript:;" data-toggle="modal"  data-target="#agreementModal">Mesafeli Satış Sözleşmesini</a>
+                                                            <a data-toggle="modal"  data-target="#agreementModal">Mesafeli Satış Sözleşmesini</a>
                                                             okudum, onaylıyorum.
                                                         </span>
                                                                 </label>
@@ -1238,8 +1238,6 @@
     <!-- capslock -->
     <script type="text/javascript" src="assets/js/capslock/jquery.capslockstate.js "></script>
 
-    <!-- validate -->
-    <script type="text/javascript" src="assets/js/validate/jquery.validate.js "></script>
     <script type="text/javascript" src="assets/js/validate/jquery.maskedinput-1.2.1.pack.js "></script>
 
     <!-- scroll -->
@@ -1247,6 +1245,32 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js "></script>
     <script src="assets/js/odeme-main.js"></script>
+
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/init.js"></script>
+    <script src="assets/js/velocity.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/odeme-main.js"></script>
+    <script src="assets/js/jquery.maskedinput.js"></script>
+
+    <!-- card -->
+    <script src="assets/js/card.js"></script>
+    <script>
+        $('.paymentCreditCard').card({
+            container: $('.card-wrapper')
+        })
+    </script>
+    <script type="text/javascript">
+        function upperCeviz(iObj) {
+            iObj.value = iObj.value.replace(/(^|\s)([öçşğüıa-hj-z])/g,
+                function(met, gr1, gr2) {
+                    return gr1 + gr2.toUpperCase();
+                }).replace(/(^|\s)([i])/g,
+                function(met, gr1, gr2) {
+                    return gr1 + "İ";
+                });
+        }
+    </script>
 
     <script>
         $(document).ready(function() {
