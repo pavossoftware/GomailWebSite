@@ -15674,3 +15674,35 @@ button.close {
   height: 100% !important;
   opacity: 0;
 }
+
+.btn-green, .success {
+    background: #2fdab8;
+    color: #fff;
+    border-color: #2fdab8
+}
+
+.btn-green:hover, .success:hover {
+    background: #2ccaaa;
+    border-color: #2ccaaa;
+    color: #fff;
+}
+
+.btn-green:active, .success:active {
+    background: #2fdab8;
+    border-color: #2fdab8
+}
+
+.btn-green .icon-arrow-down-gray, .success .icon-arrow-down-gray, .btn-green .icon-arrow-down-white, .success .icon-arrow-down-white {
+    margin: 0 0 0 5px
+}
+
+.btn-green-light {
+    color: #fff;
+    background: #96d600;
+    border-color: #96d600
+}
+
+.btn-green-light:hover {
+    background: #8ee000;
+    border-color: #8ee000
+}
