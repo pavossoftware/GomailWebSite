@@ -36,6 +36,15 @@ angular.module('ValidationMdl', ['validateService'])
 
 		}
 		
+		$scope.getallcount = function () {
+			
+			validateSrv.allCount().success(function(data) {
+				$scope.allCount = data; 
+			});
+	
+
+		}
+		
 		
 		$scope.mxValidate = function (email) {
 			validateSrv.mxvalit(email)
@@ -56,6 +65,7 @@ angular.module('ValidationMdl', ['validateService'])
 					$scope.smtpvalidationreponse = data; 
 					$scope.gettimerCount()
 					$scope.getIPtimercount();
+					$scope.getallcount();
 					$scope.enable=false;
 				});
 
@@ -93,5 +103,6 @@ angular.module('ValidationMdl', ['validateService'])
 		
 		$scope.gettimerCount();
 		$scope.getIPtimercount();
+		$scope.getallcount();
 		
 	}]);

@@ -17,6 +17,9 @@ angular.module('validateService', [])
 			timerCount : function() {
 				return $http.get('https://maildogrulama.com/api/timerCount/',{headers: {'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' } });
 			},
+			allCount : function() {
+				return $http.get('https://maildogrulama.com/api/allCount/');
+			},
 			IPtimercount : function() {
 				return $http.get('https://maildogrulama.com/api/IPtimercount/');
 			}
